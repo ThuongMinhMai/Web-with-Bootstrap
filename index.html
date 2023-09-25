@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 	<!-- Required meta tags always come first -->
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,11 +10,20 @@
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 
-<html lang="en">
+
 <link href="css/styles.css" rel="stylesheet">
 
 <head>
@@ -39,7 +49,7 @@
             
     </nav>
         
-    <header class="jumbotron">
+    <!-- <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
@@ -50,8 +60,8 @@
                 </div>
             </div>
         </div>
-    </header>
-
+    </header> -->
+    <div id="header"></div>
     <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
@@ -85,8 +95,8 @@
             </div>
         </div>
     </div>
-
-    <footer class="footer">
+    <div id="footer"></div>
+    <!-- <footer class="footer">
         <div class="container">
             <div class="row">             
                 <div class="col-4 offset-1 col-sm-2">
@@ -126,7 +136,8 @@
                 </div>
            </div>
         </div>
-    </footer>
+    </footer> -->
+    
 
 </body>
 
